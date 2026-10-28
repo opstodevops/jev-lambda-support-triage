@@ -1,0 +1,33 @@
+# Dependencies and build output
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.zip
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+
+# draw.io backups
+*.drawio.bkp
+.$*.drawio*
+
+# Re-downloaded by eval/prepare_data.py
+data/raw/
+*.jsonl
+
+# Generated evaluation output
+results/
+
+# Working notes and third-party doc copies, not for publishing
+research/
+jev_onepager.md
+docs/original-draft.md
+docs/architecture-old.png

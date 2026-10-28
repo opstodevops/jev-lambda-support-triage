@@ -1,0 +1,16 @@
+{
+  "instructions": [
+    "Which support queue should handle this customer message?",
+    "Which team should this customer's message be routed to?",
+    "Pick the support queue best placed to resolve what this customer is asking about."
+  ],
+  "queues_alt": {
+    "card_services": "Anything about the card itself, physical, virtual or single-use: requesting one, shipping, switching it on, connecting it to the app, PIN codes, renewal when it expires, country availability and which merchants take it. This queue also handles cards or tap-to-pay that stop working and purchases refused at a merchant.",
+    "payments_transfers": "Money sent to or received from someone else: payees, transfer timings, and transfers that are stuck, unsuccessful, rejected, cancelled or never arrived. This queue also handles where a card purchase stands (still processing, reversed or taken twice), asking for a refund, and refunds that are missing.",
+    "top_up_balance": "Loading funds into the customer's own account with a card, bank transfer, Apple Pay or Google Pay, cash or a cheque: the steps, accepted cards and currencies, maximum amounts, automatic top-ups and verifying a top-up. This queue also handles top-ups that are stuck, unsuccessful or reversed, and balances that did not go up after a transfer or deposit.",
+    "cash_atm": "Taking out cash from a cash machine: which machines take the card, withdrawals that were refused or are still processing, receiving a different amount of cash than requested, or a machine that retained the card.",
+    "fees_exchange": "Every question about a charge or fee, whether it came from a purchase, a transfer, a top-up or a cash withdrawal, including a surprise extra amount on the statement. This queue also handles currency rates (including an incorrect rate), converting currencies in the app, and the list of supported currencies.",
+    "account_security": "Keeping the account and the customer's identity safe: proving identity or where funds came from, resetting a forgotten passcode, changing personal information, minimum age, and closing the account. This queue also handles a missing or stolen card or phone, a card that may be compromised, and purchases, direct debits or cash withdrawals the customer did not make.",
+    "other": "The message is not asking this bank for help with an account, card or payment, for example small talk, travel, weather, recipes, or questions about another company's products."
+  }
+}

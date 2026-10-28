@@ -1,0 +1,85 @@
+{
+  "seed": 7,
+  "eval": {
+    "card_services": 200,
+    "payments_transfers": 130,
+    "top_up_balance": 130,
+    "cash_atm": 50,
+    "fees_exchange": 120,
+    "account_security": 140,
+    "other": 100,
+    "total": 870
+  },
+  "eval_ambiguous_rows": 200,
+  "eval_self_serve_true_rows": 410,
+  "eval_small": {
+    "card_services": 20,
+    "payments_transfers": 20,
+    "top_up_balance": 20,
+    "cash_atm": 20,
+    "fees_exchange": 20,
+    "account_security": 20,
+    "other": 20,
+    "total": 140
+  },
+  "train_fewshot20": {
+    "card_services": 20,
+    "payments_transfers": 20,
+    "top_up_balance": 20,
+    "cash_atm": 20,
+    "fees_exchange": 20,
+    "account_security": 20,
+    "other": 20,
+    "total": 140
+  },
+  "train_full": {
+    "card_services": 2264,
+    "payments_transfers": 1951,
+    "top_up_balance": 1727,
+    "cash_atm": 644,
+    "fees_exchange": 1734,
+    "account_security": 1683,
+    "other": 96,
+    "total": 10099
+  },
+  "intents_per_queue": {
+    "card_services": 20,
+    "payments_transfers": 13,
+    "top_up_balance": 13,
+    "cash_atm": 5,
+    "fees_exchange": 12,
+    "account_security": 14,
+    "other": 0,
+    "total": 77
+  },
+  "ambiguous_intents": [
+    "apple_pay_or_google_pay",
+    "balance_not_updated_after_bank_transfer",
+    "card_payment_fee_charged",
+    "card_payment_not_recognised",
+    "card_swallowed",
+    "cash_withdrawal_charge",
+    "cash_withdrawal_not_recognised",
+    "country_support",
+    "declined_card_payment",
+    "direct_debit_payment_not_recognised",
+    "extra_charge_on_statement",
+    "lost_or_stolen_card",
+    "supported_cards_and_currencies",
+    "top_up_by_bank_transfer_charge",
+    "top_up_by_card_charge",
+    "transaction_charged_twice",
+    "transfer_fee_charged",
+    "transfer_into_account",
+    "verify_top_up",
+    "wrong_exchange_rate_for_cash_withdrawal"
+  ],
+  "n_ambiguous_intents": 20,
+  "self_serve_intents": 41,
+  "clinc_oos_excluded": {
+    "oos_test": 31,
+    "oos_train": 4
+  },
+  "duplicate_texts_in_eval": 0,
+  "eval_texts_also_in_train_full": 0
+}

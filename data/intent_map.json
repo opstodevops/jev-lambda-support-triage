@@ -1,0 +1,464 @@
+{
+  "activate_my_card": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Activating a newly received card; a help article on activation covers it."
+  },
+  "card_about_to_expire": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Card expiry and replacement are card_services; the renewal process is standard."
+  },
+  "card_acceptance": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Where the card can be used; a help article on acceptance covers it."
+  },
+  "card_arrival": {
+    "queue": "card_services",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Card ordered but not arrived; staff must check the specific order and delivery."
+  },
+  "card_delivery_estimate": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Generic delivery time question; answered by a help article."
+  },
+  "card_linking": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Adding an existing or new card to the app; a how-to article covers it."
+  },
+  "card_not_working": {
+    "queue": "card_services",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific card failing needs a look at card status on the account."
+  },
+  "change_pin": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to change a PIN; standard how-to."
+  },
+  "contactless_not_working": {
+    "queue": "card_services",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Card feature not working; treated like card_not_working, needs a check of the card."
+  },
+  "country_support": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "Which countries cards/app are available in; card_services per queue brief, but a manager could treat it as account eligibility (account_security)."
+  },
+  "declined_card_payment": {
+    "queue": "card_services",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Queue brief puts 'declined at a merchant' in card_services; payments_transfers (card payment status) is a reasonable alternative. Needs account investigation."
+  },
+  "disposable_card_limits": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How many disposable cards can be made; product rule in a help article."
+  },
+  "get_disposable_virtual_card": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to get a disposable virtual card; standard how-to."
+  },
+  "get_physical_card": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "In Banking77 these messages are about the PIN for a new physical card (where it is, how to set it); PIN is card_services."
+  },
+  "getting_spare_card": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Ordering additional cards; standard how-to."
+  },
+  "getting_virtual_card": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to get a virtual card; standard how-to."
+  },
+  "order_physical_card": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to order a physical card; standard how-to."
+  },
+  "pin_blocked": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Unblocking a PIN after wrong attempts; PIN is card_services and the unblock steps are a standard article."
+  },
+  "virtual_card_not_working": {
+    "queue": "card_services",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific virtual card failing needs a check of the card on the account."
+  },
+  "visa_or_mastercard": {
+    "queue": "card_services",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Which card network is issued/accepted; a help article covers it."
+  },
+  "Refund_not_showing_up": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A merchant refund that has not appeared; staff must trace the specific transaction."
+  },
+  "beneficiary_not_allowed": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Adding a beneficiary failed; needs a look at the account."
+  },
+  "cancel_transfer": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Cancelling a specific transfer usually needs staff action on that transfer."
+  },
+  "declined_transfer": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific transfer declined; needs investigation."
+  },
+  "failed_transfer": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific transfer failed; needs investigation."
+  },
+  "pending_card_payment": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Card payment status (pending) is explicitly payments_transfers in the queue brief; needs a look at the transaction."
+  },
+  "pending_transfer": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific transfer still pending; needs a look at the transfer."
+  },
+  "receiving_money": {
+    "queue": "payments_transfers",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to receive money from others; a how-to article covers it."
+  },
+  "request_refund": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Customer wants a refund for a purchase; may need a dispute or chargeback raised by staff."
+  },
+  "reverted_card_payment?": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A card payment that was reverted; card payment status, needs a look at the transaction."
+  },
+  "transaction_charged_twice": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Duplicate card payment is card payment status (payments_transfers); fees_exchange (extra charge on statement) or account_security (unrecognised payment) are reasonable alternatives."
+  },
+  "transfer_not_received_by_recipient": {
+    "queue": "payments_transfers",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Recipient has not received a specific transfer; needs tracing."
+  },
+  "transfer_timing": {
+    "queue": "payments_transfers",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How long transfers take; a help article covers it."
+  },
+  "apple_pay_or_google_pay": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "In Banking77 these messages are about topping up with Apple Pay / Google Pay; top_up_balance, but card_services (adding the card to a wallet) is a reasonable alternative."
+  },
+  "automatic_top_up": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Auto top-up setup; standard how-to."
+  },
+  "balance_not_updated_after_bank_transfer": {
+    "queue": "top_up_balance",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Queue brief puts 'balance not updated after a deposit' in top_up_balance; payments_transfers (money received not showing) is a reasonable alternative. Needs tracing."
+  },
+  "balance_not_updated_after_cheque_or_cash_deposit": {
+    "queue": "top_up_balance",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Cash/cheque deposit not credited; needs tracing."
+  },
+  "pending_top_up": {
+    "queue": "top_up_balance",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific top-up still pending; needs a look at the account."
+  },
+  "supported_cards_and_currencies": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "In Banking77 these messages are mostly about which cards and currencies can be used to add money; top_up_balance, but fees_exchange (supported currencies) or card_services are reasonable alternatives."
+  },
+  "top_up_by_cash_or_cheque": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to top up with cash or cheque; standard how-to."
+  },
+  "top_up_failed": {
+    "queue": "top_up_balance",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific top-up failed; needs investigation."
+  },
+  "top_up_limits": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Top-up limits are a product rule in a help article."
+  },
+  "top_up_reverted": {
+    "queue": "top_up_balance",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific top-up reversed; needs investigation."
+  },
+  "topping_up_by_card": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to top up with a card; standard how-to."
+  },
+  "transfer_into_account": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "Customer asks how to put money into their own account by bank transfer, which is a top-up; payments_transfers (receiving transfers) is a reasonable alternative."
+  },
+  "verify_top_up": {
+    "queue": "top_up_balance",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "Why/how a top-up card must be verified; top_up_balance, but account_security (verification) is a reasonable alternative."
+  },
+  "atm_support": {
+    "queue": "cash_atm",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Which ATMs accept the card; a help article covers it."
+  },
+  "card_swallowed": {
+    "queue": "cash_atm",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "ATM kept the card is cash_atm per queue brief; card_services (replacement card) is a reasonable alternative. Staff usually need to block/replace the card."
+  },
+  "declined_cash_withdrawal": {
+    "queue": "cash_atm",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific withdrawal declined; needs investigation."
+  },
+  "pending_cash_withdrawal": {
+    "queue": "cash_atm",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "A specific withdrawal pending; needs a look at the transaction."
+  },
+  "wrong_amount_of_cash_received": {
+    "queue": "cash_atm",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "ATM dispensed the wrong amount; staff must investigate and possibly raise a claim."
+  },
+  "card_payment_fee_charged": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "A fee on a card payment is a fee question (fees_exchange); payments_transfers is a reasonable alternative. The fee schedule article explains when it applies."
+  },
+  "card_payment_wrong_exchange_rate": {
+    "queue": "fees_exchange",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Wrong exchange rate on a card payment; exchange rates are fees_exchange. Needs a look at the transaction."
+  },
+  "cash_withdrawal_charge": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "A fee on a cash withdrawal is a fee question; cash_atm is a reasonable alternative. The fee schedule article explains it."
+  },
+  "exchange_charge": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Fees for currency exchange; covered by the fee schedule."
+  },
+  "exchange_rate": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Which exchange rate is used; a help article covers it."
+  },
+  "exchange_via_app": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to exchange currency in the app; standard how-to."
+  },
+  "extra_charge_on_statement": {
+    "queue": "fees_exchange",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Queue brief puts unexpected extra charges in fees_exchange; account_security (unrecognised payment) is a reasonable alternative. Needs a look at the statement."
+  },
+  "fiat_currency_support": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Which currencies are supported; a help article covers it."
+  },
+  "top_up_by_bank_transfer_charge": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "Fee for topping up by bank transfer is a fee question; top_up_balance is a reasonable alternative. Fee schedule explains it."
+  },
+  "top_up_by_card_charge": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "Fee for topping up by card is a fee question; top_up_balance is a reasonable alternative. Fee schedule explains it."
+  },
+  "transfer_fee_charged": {
+    "queue": "fees_exchange",
+    "self_serve": true,
+    "ambiguous": true,
+    "rationale": "A fee on a transfer is a fee question; payments_transfers is a reasonable alternative. Fee schedule explains it."
+  },
+  "wrong_exchange_rate_for_cash_withdrawal": {
+    "queue": "fees_exchange",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Wrong exchange rate on an ATM withdrawal; fees_exchange (exchange rates), but cash_atm (wrong amount from a withdrawal) is a reasonable alternative. Needs a look at the transaction."
+  },
+  "age_limit": {
+    "queue": "account_security",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Minimum age requirement; queue brief puts age requirements here; a help article covers it."
+  },
+  "card_payment_not_recognised": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Unrecognised card payment is suspected fraud (account_security); payments_transfers is a reasonable alternative. Needs investigation."
+  },
+  "cash_withdrawal_not_recognised": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Unrecognised cash withdrawal is suspected fraud (account_security); cash_atm is a reasonable alternative. Needs investigation."
+  },
+  "compromised_card": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Compromised card / suspected fraud; staff must block and investigate."
+  },
+  "direct_debit_payment_not_recognised": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Unrecognised direct debit is suspected fraud (account_security); payments_transfers (direct debits) is a reasonable alternative. Needs investigation."
+  },
+  "edit_personal_details": {
+    "queue": "account_security",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Updating name/address; queue brief puts personal details here; a how-to article covers it."
+  },
+  "lost_or_stolen_card": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": true,
+    "rationale": "Lost or stolen card is account_security per queue brief; card_services (replacement) is a reasonable alternative. Staff must block the card."
+  },
+  "lost_or_stolen_phone": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Lost or stolen phone with app access; staff must secure the account."
+  },
+  "passcode_forgotten": {
+    "queue": "account_security",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Resetting a forgotten passcode; standard how-to."
+  },
+  "terminate_account": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Closing the account; queue brief puts closure here. Staff must act on the specific account (balance, pending items)."
+  },
+  "unable_to_verify_identity": {
+    "queue": "account_security",
+    "self_serve": false,
+    "ambiguous": false,
+    "rationale": "Identity verification failing for this customer; staff must review."
+  },
+  "verify_my_identity": {
+    "queue": "account_security",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How to verify identity; standard how-to."
+  },
+  "verify_source_of_funds": {
+    "queue": "account_security",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "How/why to verify source of funds; a help article covers it."
+  },
+  "why_verify_identity": {
+    "queue": "account_security",
+    "self_serve": true,
+    "ambiguous": false,
+    "rationale": "Why identity verification is needed; a help article covers it."
+  }
+}

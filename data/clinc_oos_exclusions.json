@@ -1,0 +1,42 @@
+{
+  "method": "Keyword scan of CLINC150 oos_train/oos_test for banking terms, then manual review; listed texts are excluded before sampling. Near-domain: a banking support agent could reasonably route this to a banking queue, so the 'other' label would be noisy.",
+  "oos_test": [
+    "at what age can someone get a card",
+    "can you tell me what credit cards i have open",
+    "can you fill in my credit card number on the screen",
+    "can you delete my saved credit card",
+    "what is my checking account number",
+    "what is the fee for a cash advance",
+    "is the bank open on mlk day",
+    "can i deposit a check",
+    "how can i get a better rate on my card",
+    "can you sign out of my bank login",
+    "what is the cashback rate for my credit card",
+    "how long is the bank open until",
+    "can i set up mobile deposits",
+    "how do i add someone to my account",
+    "how long do i have to wait to get my refund",
+    "do you know if it is possible to close my savings account",
+    "how hard is it to close a bank account at wells fargo",
+    "add my wife as an authorized user to checking account 20905432",
+    "i need to add a person to my bank account",
+    "can i use direct deposit for my tax refund",
+    "please take all my money out of my checking account and close the account",
+    "what are the last 4 digits of my credit card number",
+    "list the contents of my safety deposit box at the bank",
+    "how do you get a safe deposit box",
+    "look up the conversion rate for the euro to dollar exchange",
+    "i have too many credit cards, is there any way you can help me organize them",
+    "request a refund on the car wax i bought yesterday",
+    "do i have overdraft protection",
+    "i need to update my address",
+    "how much time do i have left on my 0% apr",
+    "how much over will overdraft protection cover"
+  ],
+  "oos_train": [
+    "how much is an overdraft fee for bank",
+    "how do i open an online line of credit",
+    "how long do wire transfers take",
+    "how do i change my billing address"
+  ]
+}
